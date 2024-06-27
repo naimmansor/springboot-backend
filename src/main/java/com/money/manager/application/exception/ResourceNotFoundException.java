@@ -1,4 +1,4 @@
-package com.spring.exception;
+package com.money.manager.application.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

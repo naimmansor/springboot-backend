@@ -1,4 +1,4 @@
-package com.spring.model;
+package com.money.manager.domain.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

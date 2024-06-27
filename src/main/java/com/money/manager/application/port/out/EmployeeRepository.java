@@ -1,6 +1,6 @@
-package com.spring.repository;
+package com.money.manager.application.port.out;
 
-import com.spring.model.Employee;
+import com.money.manager.domain.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -22,8 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/")
 public class EmployeeController {
 
+	private final EmployeeService employeeService;
+
 	@Autowired
-	private EmployeeService employeeService;
+	private EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
 	
 	// get all employees
 	@GetMapping("/employees")

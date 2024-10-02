@@ -12,9 +12,9 @@ services:
       - db_data:/var/lib/mysql
 
   app:
-    image: moneymanager-image:v1
+    image: moneymanager:v1
     ports:
-      - "8080:8080"
+      - "9090:9090"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/employee_management_system?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
       SPRING.JPA.PROPERTIES.HIBERNATE.DIALECT: org.hibernate.dialect.MySQL8Dialect
